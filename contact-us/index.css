@@ -76,6 +76,7 @@ h2 {
 .form-container button:hover {
     color: #bc986a;
     background: #FBEEC1;
+    transition: background-color 0.25s ease-out;
 }
 
 .info-block {

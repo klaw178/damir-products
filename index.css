@@ -36,6 +36,7 @@ footer {
 
 .lang-opt>div {
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .lang-opt>div:first-child {
@@ -144,7 +145,9 @@ footer {
 
 .explore-btn {
     border-radius: 30px;
-    background: #BC986A80;
+    background-size: 200%;
+    background-image: linear-gradient(to right, #fbeec180 0%, #daad8680 51%, #fbeec180 100%);
+    transition: background-position 0.5s;
     cursor: pointer;
     box-sizing: border-box;
     font-size: 24px;
@@ -152,9 +155,7 @@ footer {
 }
 
 .explore-btn:hover {
-    color: #BC986A;
-    background-color: #FBEEC1;
-    transition: background-color 0.25s ease-out;
+    background-position: right center;
 }
 
 .intro-container {
@@ -203,8 +204,9 @@ footer {
 
 .gallery-btn {
     box-sizing: border-box;
-    background-color: #BC986A;
-    color: white;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    box-shadow: #422800 4px 4px 0 0;
     border-radius: 30px;
     font-size: 28px;
     padding: 15px 30px;
@@ -212,13 +214,12 @@ footer {
 
 .gallery-btn a,
 .card-btn a {
-    color: white;
+    color: #422800;
 }
 
 .gallery-btn:hover,
 .card-btn:hover {
-    background-color: #FBEEC1;
-    transition: all 0.25s ease-out;
+    background-color: white
 }
 
 .gallery-btn:hover a,
@@ -297,7 +298,9 @@ footer {
     border-radius: 20px;
     padding: 15px 15px;
     font-size: 18px;
-    background: #BC986A;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    box-shadow: #422800 4px 4px 0 0;
 }
 
 .footer-container {
@@ -554,4 +557,42 @@ footer {
         width: 100px;
     }
 
+}
+
+
+
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
