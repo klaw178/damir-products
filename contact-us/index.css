@@ -60,7 +60,9 @@ h2 {
 }
 
 .form-container button {
-    background-color: #bc986a;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    box-shadow: #422800 4px 4px 0 0;
     width: 360px;
     border: 0;
     border-radius: 30px;
@@ -69,14 +71,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #422800;
     font-size: 24px;
 }
 
 .form-container button:hover {
-    color: #bc986a;
-    background: #FBEEC1;
-    transition: background-color 0.25s ease-out;
+    background-color: white;
+    color: #BC986A;
 }
 
 .info-block {
